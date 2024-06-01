@@ -4,7 +4,8 @@
   "description": "An Electron application with React and TypeScript",
   "main": "./out/main/index.js",
   "author": "example.com",
-  "homepage": "https://electron-vite.org",
+  "homepage": "https://github.com/craftxdog/MarkDown-Note.git",
+  "repository": "https://github.com/craftxdog/MarkDown-Note.git",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
@@ -13,7 +14,7 @@
     "typecheck": "npm run typecheck:node && npm run typecheck:web",
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
-    "build": "electron-builder --help",
+    "build": "electron-builder -l",
     "postinstall": "electron-builder install-app-deps",
     "build:unpack": "npm run build && electron-builder --dir",
     "build:win": "npm run build && electron-builder --win",
