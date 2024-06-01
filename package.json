@@ -1,5 +1,5 @@
 {
-  "name": "13-markdown-app",
+  "name": "marknote",
   "version": "1.0.0",
   "description": "An Electron application with React and TypeScript",
   "main": "./out/main/index.js",
@@ -13,7 +13,7 @@
     "typecheck": "npm run typecheck:node && npm run typecheck:web",
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
-    "build": "npm run typecheck && electron-vite build",
+    "build": "electron-builder --help",
     "postinstall": "electron-builder install-app-deps",
     "build:unpack": "npm run build && electron-builder --dir",
     "build:win": "npm run build && electron-builder --win",
@@ -56,5 +56,12 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.3.3",
     "vite": "^5.0.12"
+  },
+  "build": {
+    "appId": "com.craftxdog.marknote",
+    "copyright": "copyright craftxdog",
+    "linux": {
+      "category": "Utility"
+    }
   }
 }
